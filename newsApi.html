@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchNews</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        marquee {
+            font-size: 150%;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .clc {
+            font-size: larger;
+            color: red;
+        }
+
+        .cont2 {
+            font-size: x-large;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .bt {
+            margin-top: 0.7%;
+        }
+
+        button {
+            font-size: medium;
+            padding: 0.5%;
+            border-radius: 10px;
+            border-color: gold;
+            background-image: linear-gradient(rgb(81, 255, 255), rgb(185, 56, 255));
+        }
+
+        .button {
+            font-size: medium;
+            padding: 0.5%;
+            border-radius: 10px;
+            border-color: rgb(34, 255, 0);
+            background-image: linear-gradient(rgb(255, 196, 57), rgb(142, 198, 255));
+        }
+
+        .out {
+            color: white;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        body {
+            background-color: rgb(20, 20, 20);
+        }
+
+        #hdo {
+            font-size: 210%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        #one,
+        #sone,
+        #tone {
+            font-size: xx-large;
+            color: red;
+        }
+
+        #two,
+        #stwo,
+        #ttwo {
+            font-size: x-large;
+        }
+
+        #three,
+        #sthree,
+        #tthree {
+            font-size: larger;
+            color: rgb(61, 90, 255);
+        }
+
+        #four,
+        #sfour,
+        #tfour {
+            font-size: larger;
+            color: rgb(21, 255, 0);
+        }
+
+        @media screen and (max-width:500px) {
+            marquee {
+            font-size: 120%;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .clc {
+            font-size: x-large;
+            color: red;
+        }
+
+        .cont2 {
+            font-size: x-large;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .bt {
+            margin-top: 0.7%;
+        }
+
+        button {
+            font-size: medium;
+            padding: 0.7%;
+            border-radius: 10px;
+            border-color: gold;
+            background-image: linear-gradient(rgb(81, 255, 255), rgb(185, 56, 255));
+        }
+
+        .button {
+            font-size: medium;
+            padding: 0.7%;
+            border-radius: 10px;
+            border-color: rgb(34, 255, 0);
+            background-image: linear-gradient(rgb(255, 196, 57), rgb(142, 198, 255));
+        }
+
+        .out {
+            color: white;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        body {
+            background-color: rgb(20, 20, 20);
+        }
+
+        #hdo {
+            font-size: 160%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        #one,
+        #sone,
+        #tone {
+            font-size: x-large;
+            color: red;
+            text-align: center;
+        }
+
+
+        #two,
+        #stwo,
+        #ttwo {
+            font-size: larger;
+            text-align: center;
+        }
+
+        #three,
+        #sthree,
+        #tthree {
+            display: none;
+        }
+
+        #four,
+        #sfour,
+        #tfour {
+            text-align: center;
+            font-size: large;
+            color: rgb(21, 255, 0);
+        }
+            
+        }
+        
+        @media screen and (min-width:500px) {
+
+
+            marquee {
+                font-size: 130%;
+                font-style: italic;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+
+            .clc {
+                font-size: larger;
+                color: red;
+            }
+
+            .cont2 {
+                font-size: x-large;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            .bt {
+                margin-top: 0.7%;
+            }
+
+            button {
+                font-size: medium;
+                padding: 0.5%;
+                border-radius: 10px;
+                border-color: gold;
+                background-image: linear-gradient(rgb(81, 255, 255), rgb(185, 56, 255));
+            }
+
+            .button {
+                font-size: medium;
+                padding: 0.5%;
+                border-radius: 10px;
+                border-color: rgb(34, 255, 0);
+                background-image: linear-gradient(rgb(255, 196, 57), rgb(142, 198, 255));
+            }
+
+            .out {
+                color: white;
+                text-align: center;
+                margin-top: 2%;
+            }
+
+            body {
+                background-color: rgb(20, 20, 20);
+            }
+
+            #hdo {
+                font-size: 170%;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            #one,
+            #sone,
+            #tone {
+                font-size: x-large;
+                color: red;
+                text-align: center;
+            }
+
+
+            #two,
+            #stwo,
+            #ttwo {
+                font-size: larger;
+                text-align: center;
+            }
+
+            #three,
+            #sthree,
+            #tthree {
+                font-size: large;
+                color: rgb(61, 90, 255);
+                text-align: center;
+            }
+
+            #four,
+            #sfour,
+            #tfour {
+                text-align: center;
+                font-size: large;
+                color: rgb(21, 255, 0);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cont1">
+            <div class="cont2">
+                <label for="ref">
+                    <marquee>See the new headlines are after every 5.mins with refreshing it.</marquee>
+                </label>
+                <label for="news" class="clc">Click here to see news.</label>
+                <div class="bt">
+                    <button name="news" onclick="fun()">Click me</button>
+                    <button name="ref" class="button" onclick="fun()">Refresh</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="out">
+            <span id="hdo"></span>
+            <span id="one"></span>
+            <span id="two"></span>
+            <span id="three"></span>
+            <span id="four"></span>
+            <br>
+            <br>
+            <span id="sone"></span>
+            <span id="stwo"></span>
+            <span id="sthree"></span>
+            <span id="sfour"></span>
+            <br>
+            <br>
+            <span id="tone"></span>
+            <span id="ttwo"></span>
+            <span id="tthree"></span>
+            <span id="tfour"></span>
+
+        </div>
+    </div>
+    <script>
+
+
+        async function fun() {
+            const api = `https://api.thenewsapi.com/v1/news/all?api_token=HugGLyXpyNM9a4JeqKNxQ8FLIlQPYxGabv1BXyhz&language=en&limit=3`;
+            const a = await fetch(api);
+            const data = await a.json();
+
+            document.getElementById("hdo").innerHTML = `THE HEADLINES ARE HERE: <br> <br>`
+            document.getElementById("one").innerHTML = `1.Title: ${data.data[0].title} <br>`
+            document.getElementById("two").innerHTML = `Descritpion: ${data.data[0].description} <br>`
+            document.getElementById("three").innerHTML = `Url: ${data.data[0].url} <br>`
+            document.getElementById("four").innerHTML = `Published_at: ${data.data[0].published_at} <br> Source: ${data.data[0].source} <br>`
+
+            document.getElementById("sone").innerHTML = `2.Title: ${data.data[1].title} <br>`
+            document.getElementById("stwo").innerHTML = `Descritpion: ${data.data[1].description} <br>`
+            document.getElementById("sthree").innerHTML = `Url: ${data.data[1].url} <br>`
+            document.getElementById("sfour").innerHTML = `Published_at: ${data.data[1].published_at} <br> Source: ${data.data[0].source} <br>`
+
+
+            document.getElementById("tone").innerHTML = `3.Title: ${data.data[1].title} <br>`
+            document.getElementById("ttwo").innerHTML = `Descritpion: ${data.data[1].description} <br>`
+            document.getElementById("tthree").innerHTML = `Url: ${data.data[1].url} <br>`
+            document.getElementById("tfour").innerHTML = `Published_at: ${data.data[1].published_at} <br> Source: ${data.data[0].source} <br>`
+
+
+        }
+    </script>
+</body>
+
+</html>
